@@ -63,6 +63,11 @@ body{
     justify-content: center;
     align-items: end;
 }
+.text-card-css{
+    color: #495C83;
+    font-weight: 600;
+    font-size: 18px;
+}
 
 .TituloColumnas{
     justify-content: center;
