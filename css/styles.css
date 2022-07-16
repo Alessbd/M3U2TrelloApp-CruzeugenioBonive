@@ -1,0 +1,67 @@
+body{
+    margin: 0 auto;
+    background-color: #495C83;
+    font-weight: 700;
+}
+
+.columnas{
+    display: flex;
+    justify-content: end;
+}
+.bg-btt{
+    background-color: #7A86B6;
+    border-color: #7A86B6;
+    font-weight: 600;
+
+}
+.bg-btt:hover{
+    background-color: #C8B6E2;
+    border-color: #C8B6E2;
+    color:#222;
+    font-weight: 700;
+
+}
+.bg-btt:active{
+    background-color: #C8B6E2;
+    border-color: #C8B6E2;
+    color:#222;
+    font-weight: 700;
+
+}
+.bg-btt:focus{
+    background-color: #C8B6E2;
+    border-color: #C8B6E2;
+    color:#222;
+    font-weight: 700;
+
+}
+.bg-btt-cerrar{
+    font-weight: 600;
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+.bg-btt-cerrar:hover{
+    font-weight: 700;
+    background-color: #222;
+    border-color: #222;
+}
+.margenes-col{
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 4%;
+    display: grid;
+    justify-content: center;
+    border-radius: 20px;
+    align-content: start;
+}
+
+.contenedorbttTarjetas {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.TituloColumnas{
+    justify-content: center;
+    display: flex;
+}
