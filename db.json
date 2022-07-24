@@ -2,30 +2,22 @@
     "tareas": [
       {
         "id": 1,
-        "titulo": "Proyecto Final",
+        "titulo": "Desarrollo web",
         "persona": "Lucas",
-        "descrip": "Lorem ipsum dolor sit amet consectetur adipiscing elit mi, augue nisl magnis cursus eget quam.",
+        "descrip": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         "estado": "realizado",
         "fechalimite": 1658968315,
         "creado": 1663374715
       },
       {
         "id": 2,
-        "titulo": "Diseño de Fondos",
+        "titulo": "Diseño de Blog",
         "persona": "Maria",
-        "descrip": "Lorem ipsum dolor sit, amet.",
+        "descrip": "Lorem ipsum dolor sit.",
         "estado": "hacer",
-        "fechalimite": 1640737915,
-        "creado": 	1703809915
-      },
-      {
-        "id": 3,
-        "titulo": "Musica ambiental",
-        "persona": "Dvid",
-        "descrip": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        "estado": "en-progreso",
-        "fechalimite": 1740438915,
-        "creado": 	1603806915
+        "fechalimite": 1740734915,
+        "creado": 	1801803915
       }
+
     ]
   }
