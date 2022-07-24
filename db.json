@@ -2,21 +2,21 @@
     "tareas": [
       {
         "id": 1,
-        "titulo": "Desarrollo Musical",
-        "persona": "David",
-        "detalles": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        "estado": "en-progreso",
-        "fechalimite": 1220450940,
-        "creado": 1615352159
+        "title": "Desarrollo Web",
+        "person": "Lucas",
+        "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "state": "realizado",
+        "deadline": 1790410940,
+        "created": 1615352159
       },
       {
         "id": 2,
-        "titulo": "Pruebas de App",
-        "persona": "Nestor",
-        "detalles": "Lorem ipsum dolor.",
-        "estado": "hacer",
-        "fechalimite": 1815524959,
-        "creado": 1715352159
+        "title": "Diseño de hojas",
+        "person": "Maria",
+        "details": "Lorem ipsum dolor sit.",
+        "state": "hacer",
+        "deadline": 1715524959,
+        "created": 1635352159
       }
     ]
   }
