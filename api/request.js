@@ -23,7 +23,7 @@ const crearTarea = (tarea) => {
   divTarjeta.classList.add("card-body");
 
   //Se crea la estrucutra restante de las tarjetas
-  divTarjeta.innerHTML = `<h5 class="card-title text-card-css">Título: ${tarea.titulo} </h5><h6 class="card-subtitle mb-2">Descripción: ${tarea.descrip}</h6><h6 class="card-subtitle mb-2 text-muted">Responsable: ${tarea.persona}</h6><p class="card-text">Plazo: ${FormatoFecha(tarea.fechalimite)} </p><p class="card-text">Creación: ${FormatoFecha(tarea.creado)} </p>`
+  divTarjeta.innerHTML = `<h5 class="card-title text-card-css">Título: ${tarea.title} </h5><h6 class="card-subtitle mb-2">Descripción: ${tarea.details}</h6><h6 class="card-subtitle mb-2 text-muted">Responsable: ${tarea.person}</h6><p class="card-text">Plazo: ${dateFormat(tarea.deadline)} </p><p class="card-text">Creación: ${dateFormat(tarea.created)} </p>`
 
   nuevaTarea.appendChild(divTarjeta);
 
