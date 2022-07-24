@@ -68,6 +68,9 @@ body{
     font-weight: 600;
     font-size: 18px;
 }
+.stilotarjetas{
+    width: 18rem;
+}
 
 .TituloColumnas{
     justify-content: center;

@@ -1,22 +1,31 @@
 {
-    "tasks": [
+    "tareas": [
       {
         "id": 1,
-        "title": "Frontend",
-        "person": "Stiwar",
-        "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        "state": "done",
-        "deadline": 1290410940,
-        "created": 1615352159
+        "titulo": "Proyecto Final",
+        "persona": "Lucas",
+        "descrip": "Lorem ipsum dolor sit amet consectetur adipiscing elit mi, augue nisl magnis cursus eget quam.",
+        "estado": "realizado",
+        "fechalimite": 1658968315,
+        "creado": 1663374715
       },
       {
         "id": 2,
-        "title": "Backend",
-        "person": "Jhon E.",
-        "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        "state": "to-do",
-        "deadline": 1615524959,
-        "created": 1615352159
+        "titulo": "Diseño de Fondos",
+        "persona": "Maria",
+        "descrip": "Lorem ipsum dolor sit, amet.",
+        "estado": "hacer",
+        "fechalimite": 1640737915,
+        "creado": 	1703809915
+      },
+      {
+        "id": 3,
+        "titulo": "Musica ambiental",
+        "persona": "Dvid",
+        "descrip": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "estado": "en-progreso",
+        "fechalimite": 1740438915,
+        "creado": 	1603806915
       }
     ]
   }
