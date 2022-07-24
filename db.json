@@ -2,21 +2,21 @@
     "tareas": [
       {
         "id": 1,
-        "title": "Frontend",
-        "person": "Stiwar",
-        "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        "state": "realizado",
-        "deadline": 1290410940,
-        "created": 1615352159
+        "titulo": "Desarrollo Musical",
+        "persona": "David",
+        "detalles": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "estado": "en-progreso",
+        "fechalimite": 1220450940,
+        "creado": 1615352159
       },
       {
         "id": 2,
-        "title": "Backend",
-        "person": "Jhon E.",
-        "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        "state": "hacer",
-        "deadline": 1615524959,
-        "created": 1615352159
+        "titulo": "Pruebas de App",
+        "persona": "Nestor",
+        "detalles": "Lorem ipsum dolor.",
+        "estado": "hacer",
+        "fechalimite": 1815524959,
+        "creado": 1715352159
       }
     ]
   }
