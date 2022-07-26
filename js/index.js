@@ -1,3 +1,5 @@
+/*
+
 let Porhacertit = document.getElementById('tituloPorHacer')
 let Deschacer = document.getElementById('DescripcionPorHacer')
 let ResponsableporHac = document.getElementById('responsableporhacer')
@@ -49,3 +51,5 @@ function tarjetafinalizado(){
         document.getElementById('EntregaFinalizado').value = ''
     }    
 }
+
+*/

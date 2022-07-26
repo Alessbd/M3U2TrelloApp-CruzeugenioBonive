@@ -9,109 +9,63 @@
     <title>Trello App</title>
 </head>
 <!-- Inicio del Header -->
-<header>
-    <div class="container-fluid bg-light ">
-        <div class="row justify-content-between">
-            <div class="col-6 align-self-start">
-                <img src="./Assets/trello-logo.svg" alt="Logo app" width="100px" height="100px">
-            </div>
-        </div>
-    </div>
-</header>
-<!-- Fin del Header -->
-
-<!-- Inicio del Cuerpo de la app -->
-
-<main class="pt-5">
-    <div class="container-fluid">
-        <div class="row ">
-            <div class="col bg-light margenes-col ">
-                <div class="TituloColumnas">
-                    <h2 class="mb-3 mt-3">Por hacer</h2>
-                </div>
-                <div class="col-12" id="columnaporhacer">
-                </div>
-                <div class="contenedorbttTarjetas">
-                    <button type="button" class="btn btn-primary mb-3 bg-btt" data-bs-toggle="modal" data-bs-target="#porhacer" >+ Añadir Nueva Tarjeta</button>
-                </div>
-            </div>
-            <div class="col bg-light margenes-col">
-                <div class="TituloColumnas">
-                    <h2 class="mb-3 mt-3">En Progreso</h2>
-                </div>
-                <div class="col-12" id="columnaenprogreso">
-                </div>
-                <div class="contenedorbttTarjetas">
-                    <button type="button" class="btn btn-primary mb-3 bg-btt" data-bs-toggle="modal" data-bs-target="#enprogreso" >+ Añadir Nueva Tarjeta</button>
-                </div>
-            </div>
-            <div class="col bg-light margenes-col">
-                <div class="TituloColumnas">
-                    <h2 class="mb-3 mt-3">Finalizadas</h2>
-                </div>
-                <div class="col-12" id="columnafinalizadas">
-                </div>
-                <div class="contenedorbttTarjetas">
-                    <button type="button" class="btn btn-primary mb-3 bg-btt" data-bs-toggle="modal" data-bs-target="#finalizado" >+ Añadir Nueva Tarjeta</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</main>
-
-<!-- Fin del Cuerpo de la app -->
-
-
-<!-- Inicio del modal de Por hacer -->
-
-<div class="modal fade" id="porhacer" tabindex="-1" aria-labelledby="porhacerlabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="porhacerlabel">Nueva Tarea</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+<body>
+  <header>
+      <div class="container-fluid bg-light ">
+          <div class="row justify-content-between">
+              <div class="col-6 align-self-start">
+                  <img src="./Assets/trello-logo.svg" alt="Logo app" width="100px" height="100px">
+              </div>
+          </div>
       </div>
-      <div class="modal-body">
-        <form>
-          <div class="mb-3">
-            <label for="tituloPorHacer" class="col-form-label">Título</label>
-            <input type="text" class="form-control" id="tituloPorHacer" placeholder="Escribe un título para la tarea">
-          </div>
-          <div class="mb-3">
-            <label for="DescripcionPorHacer" class="col-form-label">Descripción</label>
-            <input type="text" class="form-control" id="DescripcionPorHacer" placeholder="Escribe la descripción de la tarea">
-          </div>
-          <div class="mb-3">
-            <label for="ResponsableSelect" class="col-form-label">Responsable:</label>
-            <select class="form-select mb-3" id="responsableporhacer" aria-label="ResponsableSelect">
-                <option selected disabled>--Seleccionar--</option>
-                <option value="Usuario 1">Usuario 1</option>
-                <option value="Usuario 2">Usuario 2</option>
-              </select>
-          </div>
-          <div class="mb-3">
-            <label for="PlazoentregaSelect" class="col-form-label">Plazo de Entrega:</label>
-            <select class="form-select mb-3" id="entregaporhacer" aria-label="PlazoentregaSelect">
-                <option selected disabled>--Seleccionar--</option>
-                <option value="1 Día">1 Día</option>
-                <option value="2 Días">2 Días</option>
-                <option value="1 Semana">1 Semana</option>
-              </select>
-          </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary bg-btt-cerrar" data-bs-dismiss="modal">Cerrar</button>
-        <button type="button" class="btn btn-primary bg-btt" onclick="tarjetaporhacer();">Guardar</button>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Fin del modal de Por hacer -->
+  </header>
+  <!-- Fin del Header -->
 
-<!-- Inicio del modal de En Progreso -->
+  <!-- Inicio del Cuerpo de la app -->
 
-<div class="modal fade" id="enprogreso" tabindex="-1" aria-labelledby="porhacerlabel" aria-hidden="true">
+  <main class="pt-5">
+      <div class="container-fluid">
+          <div class="row ">
+              <div class="col bg-light margenes-col contenedordeTarjetas ">
+                  <div class="TituloColumnas">
+                      <h2 class="mb-3 mt-3">Por hacer</h2>
+                  </div>
+                  <div class="col-12" id="columnaporhacer">
+                  </div>
+                  <div class="contenedorbttTarjetas">
+                      <button type="button" class="btn btn-primary mb-3 bg-btt" data-bs-toggle="modal" data-bs-target="#porhacer" >+ Añadir Nueva Tarjeta</button>
+                  </div>
+              </div>
+              <div class="col bg-light margenes-col contenedordeTarjetas">
+                  <div class="TituloColumnas">
+                      <h2 class="mb-3 mt-3">En Progreso</h2>
+                  </div>
+                  <div class="col-12" id="columnaenprogreso">
+                  </div>
+                  <div class="contenedorbttTarjetas">
+                      <button type="button" class="btn btn-primary mb-3 bg-btt" data-bs-toggle="modal" data-bs-target="#enprogreso" >+ Añadir Nueva Tarjeta</button>
+                  </div>
+              </div>
+              <div class="col bg-light margenes-col contenedordeTarjetas">
+                  <div class="TituloColumnas">
+                      <h2 class="mb-3 mt-3">Finalizadas</h2>
+                  </div>
+                  <div class="col-12" id="columnafinalizadas">
+                  </div>
+                  <div class="contenedorbttTarjetas">
+                      <button type="button" class="btn btn-primary mb-3 bg-btt" data-bs-toggle="modal" data-bs-target="#finalizado" >+ Añadir Nueva Tarjeta</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </main>
+
+  <!-- Fin del Cuerpo de la app -->
+
+
+  <!-- Inicio del modal de Por hacer -->
+
+  <div class="modal fade" id="porhacer" tabindex="-1" aria-labelledby="porhacerlabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -119,18 +73,18 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <form>
+          <form id="formHacer">
             <div class="mb-3">
-              <label for="tituloEnProgreso" class="col-form-label">Título</label>
-              <input type="text" class="form-control" id="tituloEnProgreso" placeholder="Escribe un título para la tarea">
+              <label for="tituloPorHacer" class="col-form-label">Título</label>
+              <input type="text" class="form-control" id="tituloPorHacer" placeholder="Escribe un título para la tarea">
             </div>
             <div class="mb-3">
-              <label for="DescripcionProgreso" class="col-form-label">Descripción</label>
-              <input type="text" class="form-control" id="DescripcionProgreso" placeholder="Escribe la descripción de la tarea">
+              <label for="DescripcionPorHacer" class="col-form-label">Descripción</label>
+              <input type="text" class="form-control" id="DescripcionPorHacer" placeholder="Escribe la descripción de la tarea">
             </div>
             <div class="mb-3">
               <label for="ResponsableSelect" class="col-form-label">Responsable:</label>
-              <select class="form-select mb-3" id="responsableEnprogreso" aria-label="ResponsableSelect">
+              <select class="form-select mb-3" id="responsableporhacer" aria-label="ResponsableSelect">
                   <option selected disabled>--Seleccionar--</option>
                   <option value="Usuario 1">Usuario 1</option>
                   <option value="Usuario 2">Usuario 2</option>
@@ -138,7 +92,7 @@
             </div>
             <div class="mb-3">
               <label for="PlazoentregaSelect" class="col-form-label">Plazo de Entrega:</label>
-              <select class="form-select mb-3" aria-label="PlazoentregaSelect" id="EntregaenProgreso">
+              <select class="form-select mb-3" id="entregaporhacer" aria-label="PlazoentregaSelect">
                   <option selected disabled>--Seleccionar--</option>
                   <option value="1 Día">1 Día</option>
                   <option value="2 Días">2 Días</option>
@@ -149,72 +103,119 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary bg-btt-cerrar" data-bs-dismiss="modal">Cerrar</button>
-          <button type="button" class="btn btn-primary bg-btt" onclick="tarjetaenprogreso();">Guardar</button>
+          <button type="button" class="btn btn-primary bg-btt" onclick="tarjetaporhacer();" type="submit">Guardar</button>
         </div>
       </div>
     </div>
   </div>
-  <!-- Fin del modal En Progreso -->
+  <!-- Fin del modal de Por hacer -->
 
+  <!-- Inicio del modal de En Progreso -->
 
-  <!-- Inicio del modal Finalizados -->
-
-<div class="modal fade" id="finalizado" tabindex="-1" aria-labelledby="finalizadolabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="finalizadolabel">Nueva Tarea</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <form>
-            <div class="mb-3">
-              <label for="tituloFinalizado" class="col-form-label">Título</label>
-              <input type="text" class="form-control" id="tituloFinalizado" placeholder="Escribe un título para la tarea">
-            </div>
-            <div class="mb-3">
-              <label for="DescripcionFinalizado" class="col-form-label">Descripción</label>
-              <input type="text" class="form-control" id="DescripcionFinalizado" placeholder="Escribe la descripción de la tarea">
-            </div>
-            <div class="mb-3">
-              <label for="ResponsableSelect" class="col-form-label">Responsable:</label>
-              <select class="form-select mb-3" aria-label="ResponsableSelect" id="ResponsableFinalizado">
-                  <option selected disabled>--Seleccionar--</option>
-                  <option value="Usuario 1">Usuario 1</option>
-                  <option value="Usuario 2">Usuario 2</option>
-                </select>
-            </div>
-            <div class="mb-3">
-              <label for="PlazoentregaSelect" class="col-form-label">Plazo de Entrega:</label>
-              <select class="form-select mb-3" aria-label="PlazoentregaSelect" id="EntregaFinalizado">
-                  <option selected disabled>--Seleccionar--</option>
-                  <option value="1 Día">1 Día</option>
-                  <option value="2 Días">2 Días</option>
-                  <option value="1 Semana<">1 Semana</option>
-                </select>
-            </div>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary bg-btt-cerrar" data-bs-dismiss="modal">Cerrar</button>
-          <button type="button" class="btn btn-primary bg-btt" onclick="tarjetafinalizado();">Guardar</button>
+  <div class="modal fade" id="enprogreso" tabindex="-1" aria-labelledby="porhacerlabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="porhacerlabel">Nueva Tarea</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form id="formProgreso">
+              <div class="mb-3">
+                <label for="tituloEnProgreso" class="col-form-label">Título</label>
+                <input type="text" class="form-control" id="tituloEnProgreso" placeholder="Escribe un título para la tarea">
+              </div>
+              <div class="mb-3">
+                <label for="DescripcionProgreso" class="col-form-label">Descripción</label>
+                <input type="text" class="form-control" id="DescripcionProgreso" placeholder="Escribe la descripción de la tarea">
+              </div>
+              <div class="mb-3">
+                <label for="ResponsableSelect" class="col-form-label">Responsable:</label>
+                <select class="form-select mb-3" id="responsableEnprogreso" aria-label="ResponsableSelect">
+                    <option selected disabled>--Seleccionar--</option>
+                    <option value="Usuario 1">Usuario 1</option>
+                    <option value="Usuario 2">Usuario 2</option>
+                  </select>
+              </div>
+              <div class="mb-3">
+                <label for="PlazoentregaSelect" class="col-form-label">Plazo de Entrega:</label>
+                <select class="form-select mb-3" aria-label="PlazoentregaSelect" id="EntregaenProgreso">
+                    <option selected disabled>--Seleccionar--</option>
+                    <option value="1 Día">1 Día</option>
+                    <option value="2 Días">2 Días</option>
+                    <option value="1 Semana">1 Semana</option>
+                  </select>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary bg-btt-cerrar" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary bg-btt" onclick="tarjetaenprogreso();" type="submit">Guardar</button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- Fin del modal de Finalizados -->
+    <!-- Fin del modal En Progreso -->
 
-<body>
 
-    
-</body>
+    <!-- Inicio del modal Finalizados -->
+
+  <div class="modal fade" id="finalizado" tabindex="-1" aria-labelledby="finalizadolabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="finalizadolabel">Nueva Tarea</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form id="formFinal">
+              <div class="mb-3">
+                <label for="tituloFinalizado" class="col-form-label">Título</label>
+                <input type="text" class="form-control" id="tituloFinalizado" placeholder="Escribe un título para la tarea">
+              </div>
+              <div class="mb-3">
+                <label for="DescripcionFinalizado" class="col-form-label">Descripción</label>
+                <input type="text" class="form-control" id="DescripcionFinalizado" placeholder="Escribe la descripción de la tarea">
+              </div>
+              <div class="mb-3">
+                <label for="ResponsableSelect" class="col-form-label">Responsable:</label>
+                <select class="form-select mb-3" aria-label="ResponsableSelect" id="ResponsableFinalizado">
+                    <option selected disabled>--Seleccionar--</option>
+                    <option value="Usuario 1">Usuario 1</option>
+                    <option value="Usuario 2">Usuario 2</option>
+                  </select>
+              </div>
+              <div class="mb-3">
+                <label for="PlazoentregaSelect" class="col-form-label">Plazo de Entrega:</label>
+                <select class="form-select mb-3" aria-label="PlazoentregaSelect" id="EntregaFinalizado">
+                    <option selected disabled>--Seleccionar--</option>
+                    <option value="1 Día">1 Día</option>
+                    <option value="2 Días">2 Días</option>
+                    <option value="1 Semana">1 Semana</option>
+                  </select>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary bg-btt-cerrar" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary bg-btt" onclick="tarjetafinalizado();" type="submit">Guardar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fin del modal de Finalizados -->
+
 <script src="https://momentjs.com/downloads/moment.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@shopify/draggable@1.0.0-beta.8/lib/sortable.js"></script>
+<script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
 <script src="./js/helpers/date.js"></script>
+<script src="./js/helpers/dragandDrop.js"></script>
 <script src="./api/request.js"></script>
 <script src="./js/index.js"></script>
+</body>
 </html>
 
