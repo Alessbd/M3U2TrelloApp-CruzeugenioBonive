@@ -6,6 +6,9 @@ body{
     background-color: #495C83;
     font-weight: 700;
 }
+.text-weight{
+    font-weight: 600;
+}
 
 .columnas{
     display: flex;
@@ -62,6 +65,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: end;
+    order: 1;
 }
 .text-card-css{
     color: #495C83;

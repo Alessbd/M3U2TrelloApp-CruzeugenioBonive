@@ -1,86 +1,77 @@
-// Apuntamos al formulario para crear la nueva tarea del HTML
-const formHa = document.querySelector('#formHacer');
+// Se apunta al formulario Hacer para obtener sus datos
+ formHacer = document.querySelector('#formHacer')
 
-formHa.addEventListener('submit', (ev) => {
-  // Evitamos que la pagina se recargue cuando se envian los datos
-  ev.preventDefault();
-  const formDatosH = ev.target;
-  
-  // Recopilamos la información a enviar a la API
-  const dataH = {
-    title: formDatosH.tituloPorHacer.value,
-    details: formDatosH.DescripcionPorHacer.value,
-    person: formDatosH.responsableporhacer.value,
-    // deadline: formData.deadLineTask.value,
-    deadline: Number(moment().add(formDatosH.entregaporhacer.value, 'days').format('X')),
+ // Se crea la funcion de la acción del boton del formulario
+ function tarjetaporhacer() {
+
+  // Se recopila la información a enviar a la API
+  const data = {
+    title: tituloPorHacer.value,
+    details: DescripcionPorHacer.value,
+    person: responsableporhacer.value,
+    deadline: Number(moment().add(entregaporhacer.value, 'days').format('X')),
     created: Number(moment().format("X")),
     state: 'hacer'
-  };
-  // Hacemos una petición POST para enviar la información a la API y le pasamos el arreglo data con la información nueva
-  axios.post(`${API_URL}/tareas`, dataH)
+  }
+  // Se hace una petición POST para enviar la información a la API y se le pasa el arreglo data con la información nueva
+  axios.post(`${API_URL}/tareas`, data)
     .then((res) => {
-      //Mandamos la información a la API
-      crearTarea(res.dataH);
-      //Reseteamos el formulario
-      formDatosH.reset();
+      //Manda la información a la API
+      crearTarea(res.data)
+      //Resetea el formulario
+      formHacer.reset()
     })
-    .catch((err) => console.error(err));
-});
+    .catch((err) => console.error(err))
+}
 
 
-const formPro = document.querySelector('#formProgreso');
+// Se apunta al formulario En Progreso para obtener sus datos
+formPro = document.querySelector('#formProgreso')
 
-formPro.addEventListener('submit', (ev) => {
-  // Evitamos que la pagina se recargue cuando se envian los datos
-  ev.preventDefault();
-  const formDatosP = ev.target;
+ // Se crea la funcion de la acción del boton del formulario
+function tarjetaenprogreso(){
   
-  // Recopilamos la información a enviar a la API
-  const dataP = {
-    title: formDatosP.tituloEnProgreso.value,
-    details: formDatosP.DescripcionProgreso.value,
-    person: formDatosP.responsableEnprogreso.value,
-    // deadline: formData.deadLineTask.value,
-    deadline: Number(moment().add(formDatosP.EntregaenProgreso.value, 'days').format('X')),
+  // Se Recopila la información a enviar a la API
+  const data = {
+    title: tituloEnProgreso.value,
+    details: DescripcionProgreso.value,
+    person: responsableEnprogreso.value,
+    deadline: Number(moment().add(EntregaenProgreso.value, 'days').format('X')),
     created: Number(moment().format("X")),
     state: 'en-progreso'
-  };
-  // Hacemos una petición POST para enviar la información a la API y le pasamos el arreglo data con la información nueva
-  axios.post(`${API_URL}/tareas`, dataP)
+  }
+  // Se hace una petición POST para enviar la información a la API y se le pasa el arreglo data con la información nueva
+  axios.post(`${API_URL}/tareas`, data)
     .then((res) => {
-      //Mandamos la información a la API
-      crearTarea(res.dataP);
-      //Reseteamos el formulario
-      formDatosP.reset();
+      //Mandam la información a la API
+      crearTarea(res.data)
+      //Resetea el formulario
+      formPro.reset()
     })
-    .catch((err) => console.error(err));
-});
+    .catch((err) => console.error(err))
+}
 
+// Se apunta al formulario Fin para obtener sus datos
+formFin = document.querySelector('#formFinal')
 
-const formFin = document.querySelector('#formFinal');
-
-formFin.addEventListener('submit', (ev) => {
-  // Evitamos que la pagina se recargue cuando se envian los datos
-  ev.preventDefault();
-  const formDatosF = ev.target;
+function tarjetafinalizado(){
   
-  // Recopilamos la información a enviar a la API
-  const dataF = {
-    title: formDatosF.tituloFinalizado.value,
-    details: formDatosF.DescripcionFinalizado.value,
-    person: formDatosF.ResponsableFinalizado.value,
-    // deadline: formData.deadLineTask.value,
-    deadline: Number(moment().add(formDatosF.EntregaFinalizado.value, 'days').format('X')),
+  // Recopila la información a enviar a la API
+  const data = {
+    title: tituloFinalizado.value,
+    details: DescripcionFinalizado.value,
+    person: ResponsableFinalizado.value,
+    deadline: Number(moment().add(EntregaFinalizado.value, 'days').format('X')),
     created: Number(moment().format("X")),
     state: 'realizado'
-  };
-  // Hacemos una petición POST para enviar la información a la API y le pasamos el arreglo data con la información nueva
-  axios.post(`${API_URL}/tareas`, dataF)
+  }
+  // Se hace una petición POST para enviar la información a la API y se le pasa el arreglo data con la información nueva
+  axios.post(`${API_URL}/tareas`, data)
     .then((res) => {
-      //Mandamos la información a la API
-      crearTarea(res.dataF);
-      //Reseteamos el formulario
-      formDatosF.reset();
+      //Manda la información a la API
+      crearTarea(res.data)
+      //Resetea el formulario
+      formFin.reset()
     })
-    .catch((err) => console.error(err));
-});
+    .catch((err) => console.error(err))
+}
