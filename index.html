@@ -76,7 +76,7 @@
             <form id="formHacer">
               <div class="mb-3">
                 <label for="tituloPorHacer" class="col-form-label">Título</label>
-                <input type="text" class="form-control" id="tituloPorHacer" name="tituloPorHacer" placeholder="Escribe un título para la tarea">
+                <input type="text" class="form-control" id="TituloPorHacer" name="tituloPorHacer" placeholder="Escribe un título para la tarea">
               </div>
               <div class="mb-3">
                 <label for="DescripcionPorHacer" class="col-form-label">Descripción</label>
@@ -84,7 +84,7 @@
               </div>
               <div class="mb-3">
                 <label for="ResponsableSelect" class="col-form-label">Responsable:</label>
-                <select class="form-select mb-3" id="responsableporhacer" name="responsableporhacer" aria-label="ResponsableSelect">
+                <select class="form-select mb-3" id="ResponsablePorHacer" name="responsableporhacer" aria-label="ResponsableSelect">
                     <option selected disabled>--Seleccionar--</option>
                     <option value="Marcus">Marcus</option>
                     <option value="Daniel">Daniela</option>
@@ -92,7 +92,7 @@
               </div>
               <div class="mb-3">
                 <label for="PlazoentregaSelect" class="col-form-label">Plazo de Entrega:</label>
-                <select class="form-select mb-3" id="entregaporhacer" name="entregaporhacer" aria-label="PlazoentregaSelect">
+                <select class="form-select mb-3" id="EntregaPorHacer" name="entregaporhacer" aria-label="PlazoentregaSelect">
                     <option selected disabled>--Seleccionar--</option>
                     <option value="1">1 Día</option>
                     <option value="2">2 Días</option>
@@ -123,7 +123,7 @@
               <form id="formProgreso">
                 <div class="mb-3">
                   <label for="tituloEnProgreso" class="col-form-label">Título</label>
-                  <input type="text" class="form-control" id="tituloEnProgreso" placeholder="Escribe un título para la tarea">
+                  <input type="text" class="form-control" id="TituloEnProgreso" placeholder="Escribe un título para la tarea">
                 </div>
                 <div class="mb-3">
                   <label for="DescripcionProgreso" class="col-form-label">Descripción</label>
@@ -131,7 +131,7 @@
                 </div>
                 <div class="mb-3">
                   <label for="ResponsableSelect" class="col-form-label">Responsable:</label>
-                  <select class="form-select mb-3" id="responsableEnprogreso" aria-label="ResponsableSelect">
+                  <select class="form-select mb-3" id="ResponsableEnprogreso" aria-label="ResponsableSelect">
                       <option selected disabled>--Seleccionar--</option>
                       <option value="Marcus">Marcus</option>
                       <option value="Daniela">Daniela</option>
@@ -139,7 +139,7 @@
                 </div>
                 <div class="mb-3">
                   <label for="PlazoentregaSelect" class="col-form-label">Plazo de Entrega:</label>
-                  <select class="form-select mb-3" aria-label="PlazoentregaSelect" id="EntregaenProgreso">
+                  <select class="form-select mb-3" aria-label="PlazoentregaSelect" id="EntregaEnProgreso">
                       <option selected disabled>--Seleccionar--</option>
                       <option value="1">1 Día</option>
                       <option value="2">2 Días</option>
@@ -171,7 +171,7 @@
               <form id="formFinal">
                 <div class="mb-3">
                   <label for="tituloFinalizado" class="col-form-label">Título</label>
-                  <input type="text" class="form-control" id="tituloFinalizado" placeholder="Escribe un título para la tarea">
+                  <input type="text" class="form-control" id="TituloFinalizado" placeholder="Escribe un título para la tarea">
                 </div>
                 <div class="mb-3">
                   <label for="DescripcionFinalizado" class="col-form-label">Descripción</label>
@@ -208,14 +208,12 @@
       <!-- Recursos Externos -->
     <script src="https://momentjs.com/downloads/moment.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@shopify/draggable@1.0.0-beta.8/lib/sortable.js"></script>
-    <script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
 
     <!-- recursos Internos -->
-    <script src="./js/helpers/nuevaTarea.js"></script>
     <script src="./js/helpers/date.js"></script>
     <script src="./js/helpers/dragandDrop.js"></script>
     <script src="./api/request.js"></script>
